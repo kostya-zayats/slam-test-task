@@ -1,0 +1,30 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+.content-width {
+  width: 100%;
+  max-width: 160rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+a, input, textarea, button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  outline: none !important;
+  text-decoration: none !important;
+}

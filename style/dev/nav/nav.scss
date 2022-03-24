@@ -1,0 +1,233 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav-links-wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 160rem;
+  height: 4rem;
+  margin: 0 auto;
+  background-color: $main-color;
+  border-radius: 0 0 2.3rem 2.3rem;
+  color: $nav-links-color;
+  font-family: 'heliosc', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem 0 3.2rem;
+  box-sizing: border-box;
+  a {
+    color: $nav-links-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    &:hover {
+      opacity: .5;
+    }
+  }
+  .with-dropdown {
+    &:after {
+      content: '';
+      display: block;
+      width: .8rem;
+      height: .5rem;
+      margin-left: .9rem;
+      background: url("../../img/ico/dropdown-ico.svg") center center no-repeat;
+    }
+  }
+}
+
+.nav-links {
+  display: flex;
+  a {
+    margin-right: 4.8rem;
+  }
+}
+.nav-contacts {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  a {
+    margin-left: 4.8rem;
+  }
+  .nav-email {
+    &:before {
+      content: '';
+      display: block;
+      width: 1.7rem;
+      height: 1.2rem;
+      margin-right: 1.8rem;
+      background: url("../../img/ico/email-ico.svg") center center no-repeat;
+    }
+  }
+  .nav-phone {
+    &:before {
+      content: '';
+      display: block;
+      width: 3.9rem;
+      height: 1.6rem;
+      margin-right: .8rem;
+      background: url("../../img/ico/mobile-phone-ico.svg") center center no-repeat;
+    }
+  }
+  .nav-callback {
+    text-decoration: dashed $nav-links-color;
+    &:before {
+      content: '';
+      display: block;
+      width: 1.3rem;
+      height: 1.8rem;
+      margin-right: 1.1rem;
+      background: url("../../img/ico/phone-ico.svg") center center no-repeat;
+    }
+  }
+  .nav-login {
+    text-decoration: dashed $nav-links-color;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: .8rem;
+      background: url("../../img/ico/user-logout-ico.svg") center center no-repeat;
+    }
+  }
+}
+.nav-links-bordered {
+
+  span {
+    border-bottom: .1rem dashed rgba(255, 255, 255, .25);
+  }
+}
+.nav-actions-wrap {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5.6rem 0 1.8rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12.4rem;
+  box-shadow: 0 .3rem 2.4rem rgba(0, 0, 0, 0.08);
+
+  .content-width {
+    display: flex;
+    align-items: center;
+  }
+}
+.logo {
+  img {
+    display: block;
+  }
+}
+.nav-slogan {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: $text-light;
+  text-align: center;
+  max-width: 20.8rem;
+  margin: 0 5.1rem 0 6.1rem;
+}
+
+.nav-search-wrap {
+  position: relative;
+  flex-grow: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 1.3rem;
+    left: 1.7rem;
+    width: 2.7rem;
+    height: 2.7rem;
+    background: url("../../img/ico/search-ico.svg") center center no-repeat;
+  }
+
+  input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding: 1.5rem 4rem 1.5rem 6.9rem;
+    letter-spacing: 0.02em;
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: $input-bg;
+    border-radius: 5rem;
+    box-sizing: border-box;
+    &::placeholder {
+      color: #000;
+    }
+  }
+}
+
+.search-delete {
+  position: absolute;
+  top: 1.3rem;
+  right: 1.7rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  &:hover {
+    svg {
+      fill: $ico-hover;
+    }
+  }
+  svg {
+    transition: .3s;
+    fill: $main-color;
+  }
+}
+
+.nav-favorites-wrap, .nav-cart-wrap {
+  font-family: 'heliosc', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  margin-left: 5.1rem;
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $common-text;
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+      svg {
+        fill: $ico-hover;
+      }
+      .cart-count {
+        background-color: $ico-hover;
+      }
+    }
+    svg {
+      margin-right: 1.3rem;
+      fill: $main-color;
+      transition: .3s;
+    }
+  }
+  .cart-count {
+    font-family: 'Acrom', sans-serif;
+    width: 2.1rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    color: $nav-links-color;
+    line-height: 1.5rem;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 1.2rem;
+    text-align: center;
+    background-color: $main-color;
+    transition: .3s;
+  }
+}

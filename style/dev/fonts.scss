@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'heliosc';
+  src: url('../fonts/heliosc-webfont.woff2') format('woff2'),
+  url('../fonts/heliosc-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Acrom';
+  src: url('../fonts/Acrom-Regular.eot');
+  src: local('../fonts/Acrom Regular'), local('Acrom-Regular'),
+  url('../fonts/Acrom-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Acrom-Regular.woff') format('woff'),
+  url('../fonts/Acrom-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
