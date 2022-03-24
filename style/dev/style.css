@@ -473,7 +473,8 @@ html, body {
   height: 100%; }
 
 .content-wrapper {
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding-top: 12.4rem; }
 
 .content-width {
   width: 100%;
@@ -492,7 +493,8 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 100; }
 
 .nav-links-wrap {
   position: relative;
@@ -576,6 +578,7 @@ nav {
   border-bottom: 0.1rem dashed rgba(255, 255, 255, 0.25); }
 
 .nav-actions-wrap {
+  background-color: #fff;
   display: flex;
   box-sizing: border-box;
   padding: 5.6rem 0 1.8rem;
@@ -738,5 +741,63 @@ footer {
     background: rgba(255, 255, 255, 0.15) url("../../img/ico/facebook.svg") center center no-repeat; }
   .footer-social-wrap .instagram {
     background: rgba(255, 255, 255, 0.15) url("../../img/ico/instagram.svg") center center no-repeat; }
+
+.main-slider-wrap {
+  max-width: 160rem;
+  margin: 0 auto;
+  position: relative; }
+  .main-slider-wrap .slick-prev {
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -2.2rem;
+    left: 4.8rem;
+    width: 5.6rem;
+    height: 4.4rem;
+    background: url("../../img/ico/main-slider-action-ico.svg") center center no-repeat;
+    z-index: 10; }
+  .main-slider-wrap .slick-next {
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -2.2rem;
+    right: 4.8rem;
+    width: 5.6rem;
+    height: 4.4rem;
+    background: url("../../img/ico/main-slider-action-ico.svg") center center no-repeat;
+    transform: rotate(180deg);
+    z-index: 10; }
+
+.main-slider-slide a {
+  position: relative;
+  display: block;
+  padding-bottom: 50%; }
+.main-slider-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.main-slider-text {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  letter-spacing: 0.02em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 10.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 15; }
 
 /*# sourceMappingURL=style.css.map */
